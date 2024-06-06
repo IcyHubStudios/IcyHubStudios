@@ -48,9 +48,10 @@
 
         .content {
             padding: 20px;
+            text-align: center;
         }
 
-        .login-button {
+        .download-button, .help-button {
             display: inline-block;
             padding: 10px 20px;
             color: #fff;
@@ -58,9 +59,10 @@
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
+            margin: 10px;
         }
 
-        .login-button:hover {
+        .download-button:hover, .help-button:hover {
             background-color: #5b6eae;
         }
 
@@ -81,30 +83,16 @@
     <header>
         <h1>IcyHubStudios</h1>
         <nav>
-            <a href="#global-ban-bot">Our Global Ban Bot</a>
-            <a href="#discord">Our Discord</a>
-            <a href="#help">Help</a>
+            <a href="help.html" class="help-button">Help</a>
         </nav>
     </header>
 
     <div class="container">
-        <section id="global-ban-bot" class="content">
-            <h2>Our Global Ban Bot</h2>
-            <p>Need to login to download our global ban bot.</p>
-            <a href="https://discord.com/oauth2/authorize?client_id=982029414932029462&redirect_uri=http://localhost:3000/auth/discord&response_type=code&scope=identify email" class="login-button">Login with Discord</a>
-            <!-- Replace YOUR_CLIENT_ID with your actual Discord client ID -->
-        </section>
-
-        <section id="discord" class="content">
-            <h2>Our Discord</h2>
-            <p>Join our Discord community to chat with other members, get support, and stay updated!</p>
-            <!-- Add your Discord invite link or widget here -->
-        </section>
-
-        <section id="help" class="content">
-            <h2>Help</h2>
-            <p>If you need any assistance or have any questions, feel free to contact us.</p>
-            <!-- Add contact information or support details here -->
+        <section id="download" class="content">
+            <h2>Download Our Global Ban Bot</h2>
+            <p>Click the button below to directly download our global ban bot.</p>
+            <a href="path/to/your/file.zip" download class="download-button">Download Now</a>
+            <!-- Replace "path/to/your/file.zip" with the actual link to your file -->
         </section>
     </div>
 
