@@ -50,6 +50,20 @@
             padding: 20px;
         }
 
+        .login-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #7289da;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-button:hover {
+            background-color: #5b6eae;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -76,8 +90,9 @@
     <div class="container">
         <section id="global-ban-bot" class="content">
             <h2>Our Global Ban Bot</h2>
-            <p>Welcome to IcyHubStudios! Our Global Ban Bot helps to keep our community safe and enjoyable for everyone.</p>
-            <!-- Add more content about your global ban bot here -->
+            <p>Need to login to download our global ban bot.</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=http://localhost:3000/auth/discord&response_type=code&scope=identify email" class="login-button">Login with Discord</a>
+            <!-- Replace YOUR_CLIENT_ID with your actual Discord client ID -->
         </section>
 
         <section id="discord" class="content">
